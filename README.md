@@ -47,7 +47,18 @@ network-education-tool/
 ├── docs/                  # Architecture, API reference, and guides
 └── tests/                 # Unit tests for all components
 ```
-
+```mermaid
+flowchart LR
+        F{{"Stage One"}}
+        A("Packet Generator")
+        A --> B{"Python Object"}
+        C("Serialization Function")
+        B --> C
+        D{"Network Data"}
+        C --> D
+        E("Network Application")
+        D --> E
+```
 ---
 
 Getting Started

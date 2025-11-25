@@ -59,6 +59,17 @@ flowchart LR
         E("Network Application")
         D --> E
 ```
+```mermaid
+flowchart LR
+        F{{"Stage Two"}}
+        B[("Server")]
+        C[/"Client"\]
+        D{"Network Data"}
+        B --> D
+        D --> C
+        D --> B
+        C --> D
+```
 ---
 
 Getting Started

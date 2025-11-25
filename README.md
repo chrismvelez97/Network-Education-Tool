@@ -83,6 +83,23 @@ flowchart LR
         C --> D
         D --> F
 ```
+```mermaid
+flowchart LR
+        A{{"Stage Four"}}
+        B[("Server")]
+        C{"Network Data"}
+        D["Encryption Tool"]
+        E[["Encrypted Data"]]
+        F[/"Client"\]
+        G["Decryption Tool"]
+        H{"Network Data"}
+        B --> C
+        C --> D
+        D --> E
+        E --> F
+        F --> G
+        G --> H
+```
 ---
 
 Getting Started

@@ -162,9 +162,3 @@ Optional Enhancements (Future)
 * EC2 deployment scripts for client-server experiments
 * Expanded visualization with live packet animation
 * Additional exercises for trainees in `training-sandbox`
-
----
-
-I can also **create a companion README for your `training-sandbox` repo** next, which integrates exercises, mini-projects, and step-by-step Python lessons for your teammates.
-
-Do you want me to do that now?

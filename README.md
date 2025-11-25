@@ -1,12 +1,12 @@
-#Network Education Tool
+Network Education Tool
 
-###**An educational Python project for learning networking, packet creation, and encryption through hands-on coding.**
+**An educational Python project for learning networking, packet creation, and encryption through hands-on coding.**
 
 This project was designed as a collaborative team project to demonstrate networking concepts, TCP packet handling, client-server communication, and packet visualization. It is intended as a **portfolio piece** for cyber security or networking-oriented applications.
 
 ---
 
-###Table of Contents
+Table of Contents
 
 1. [Purpose](#purpose)
 2. [Project Structure](#project-structure)
@@ -20,7 +20,7 @@ This project was designed as a collaborative team project to demonstrate network
 
 ---
 
-##Purpose
+Purpose
 
 This project has multiple learning goals:
 
@@ -34,7 +34,7 @@ This repo is suitable for team-based development, teaching new developers Python
 
 ---
 
-##Project Structure
+Project Structure
 
 ```
 network-education-tool/
@@ -102,7 +102,7 @@ flowchart LR
 ```
 ---
 
-##Getting Started
+Getting Started
 
 This project is structured as a **multi-stage learning path**:
 
@@ -114,7 +114,7 @@ For new developers, it’s recommended to work through the **training-sandbox re
 
 ---
 
-##Installation
+Installation
 
 1. Clone the repository:
 
@@ -190,7 +190,7 @@ hotfix/*    # urgent fixes
 
 ---
 
-##Contributing
+Contributing
 
 * Read `CONTRIBUTING.md` for coding standards and PR workflow.
 * Follow Python best practices and PEP8.

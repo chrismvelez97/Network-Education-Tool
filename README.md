@@ -47,7 +47,59 @@ network-education-tool/
 ├── docs/                  # Architecture, API reference, and guides
 └── tests/                 # Unit tests for all components
 ```
-
+```mermaid
+flowchart LR
+        F{{"Stage One"}}
+        A("Packet Generator")
+        A --> B{"Python Object"}
+        C("Serialization Function")
+        B --> C
+        D{"Network Data"}
+        C --> D
+        E("Network Application")
+        D --> E
+```
+```mermaid
+flowchart LR
+        F{{"Stage Two"}}
+        B[("Server")]
+        C[/"Client"\]
+        D{"Network Data"}
+        B --> D
+        D --> C
+        D --> B
+        C --> D
+```
+```mermaid
+flowchart LR
+        A{{"Stage Three"}}
+        B{"Network Data"}
+        C["Packet Modifier"]
+        D{{"Malformed packet (Payload)"}}
+        E[/"Client"\]
+        F[("Server")]
+        E --> B
+        B --> C
+        C --> D
+        D --> F
+```
+```mermaid
+flowchart LR
+        A{{"Stage Four"}}
+        B[("Server")]
+        C{"Network Data"}
+        D["Encryption Tool"]
+        E[["Encrypted Data"]]
+        F[/"Client"\]
+        G["Decryption Tool"]
+        H{"Network Data"}
+        B --> C
+        C --> D
+        D --> E
+        E --> F
+        F --> G
+        G --> H
+```
 ---
 
 Getting Started

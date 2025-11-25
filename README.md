@@ -70,6 +70,19 @@ flowchart LR
         D --> B
         C --> D
 ```
+```mermaid
+flowchart LR
+        A{{"Stage Three"}}
+        B{"Network Data"}
+        C["Packet Modifier"]
+        D{{"Malformed packet (Payload)"}}
+        E[/"Client"\]
+        F[("Server")]
+        E --> B
+        B --> C
+        C --> D
+        D --> F
+```
 ---
 
 Getting Started

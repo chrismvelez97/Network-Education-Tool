@@ -1,4 +1,4 @@
-Network Education Tool
+# Network Education Tool
 
 **An educational Python project for learning networking, packet creation, and encryption through hands-on coding.**
 
@@ -20,7 +20,7 @@ Table of Contents
 
 ---
 
-Purpose
+## Purpose
 
 This project has multiple learning goals:
 
@@ -34,7 +34,7 @@ This repo is suitable for team-based development, teaching new developers Python
 
 ---
 
-Project Structure
+## Project Structure
 
 ```
 network-education-tool/
@@ -102,7 +102,7 @@ flowchart LR
 ```
 ---
 
-Getting Started
+## Getting Started
 
 This project is structured as a **multi-stage learning path**:
 
@@ -114,7 +114,7 @@ For new developers, it’s recommended to work through the **training-sandbox re
 
 ---
 
-Installation
+## Installation
 
 1. Clone the repository:
 
@@ -139,7 +139,7 @@ pip install -r requirements.txt
 
 ---
 
-Usage
+## Usage
 
 * **Packet Generator:**
 
@@ -171,7 +171,7 @@ Each module includes **example scripts** and **documentation** in the `docs/` fo
 
 ---
 
-Development Workflow
+## Development Workflow
 
 * Use **feature branches**: `feature/<feature-name>`
 * Submit **pull requests** to `develop`
@@ -190,7 +190,7 @@ hotfix/*    # urgent fixes
 
 ---
 
-Contributing
+## Contributing
 
 * Read `CONTRIBUTING.md` for coding standards and PR workflow.
 * Follow Python best practices and PEP8.
@@ -199,7 +199,7 @@ Contributing
 
 ---
 
-License
+## License
 
 This repository is licensed under the **MIT License**.
 It covers **all code, guides, and documentation** in this repo, but does **not cover general networking or Python knowledge**, which is public domain.
@@ -208,7 +208,7 @@ See `LICENSE.md` for full details.
 
 ---
 
-Optional Enhancements (Future)
+## Optional Enhancements (Future)
 
 * GitHub Actions for CI/CD testing
 * EC2 deployment scripts for client-server experiments

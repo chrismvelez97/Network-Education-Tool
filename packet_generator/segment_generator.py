@@ -1,6 +1,3 @@
-from data_generator import data_generator
-import random
-
 class UDP_Segment(object):
     """docstring for UDP_Segment."""
 
@@ -8,35 +5,34 @@ class UDP_Segment(object):
         # Whatever data that is being transmit, in its binary form
         self.payload = payload
 
-        """There is one issue with the source and destination ports as of right
-        now. They sometimes generate small numbers that don't add up to the
-        standard UDP header length of 8. I'll set this number statically in
-        the calculating function for length, but also create an issue for it in
-        the repo"""
-
-        # Random source and destination ports
-        # Range starts from 1024 since all numbers preceeding this number
-        # are well known ports
-        self.source_port = data_generator(str(random.randint(1024,65535)))
-        self.dest_port = data_generator(str(random.randint(1024,65535)))
-        self.length = None
+        self.source_port = bytes([0b00000111, 0b11010000])
+        self.dest_port = bytes([0b00000111, 0b11010001])
+        self.total_length = 8 + len(payload)
 
     def display(self):
         # This method displays the objects attributes
-        print("\t\t\tSource port:\n")
-        print(self.source_port)
-        print("\n")
+        print("\n\t\t\tSource port:\n")
+        print("\t\t\t" + str(self.source_port))
+        print("\n\n")
 
         print("\t\t\tDestination port:\n")
-        print(self.dest_port)
+        print("\t\t\t" + str(self.dest_port))
+        print("\n\n")
+
+        print("\t\t\tLength:\n")
+        print("\t\t\t" + str(self.total_length))
+        print("\n\n")
+
+        print("\t\t\tChecksum: \n")
+        print("\t\t\t0")
         print("\n")
 
-        print("\t\t\tPayoad: \n")
-        print(self.payload)
+        print("\t\t\tPayload: \n")
+        print("\t\t\t" + str(self.payload))
         print("\n")
- 
 
-
-segment = UDP_Segment(data_generator(input("\nWhat is your message?\n")))
-
-segment.display()
+# message = input("\nWhat is your message?\n\n").encode()
+#
+# segment = UDP_Segment(message)
+#
+# segment.display()
